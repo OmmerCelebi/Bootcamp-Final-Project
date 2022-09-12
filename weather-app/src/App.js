@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import Wheater from "./wheaterresult";
+import Weather from "./weatherresult";
 import "./App.css";
 
 function App() {
   const APP_KEY = `8fdbd683cfc54820a77180932220909`;
   let cityinput = "";
 
-  const [wheaterdata, setweatherdata] = useState([]);
+  const [weatherdata, setweatherdata] = useState([]);
 
   const citytext = () => {
     document.querySelector("input").addEventListener("input", (e) => {
@@ -31,8 +31,8 @@ function App() {
         <button onClick={() => getdata(cityinput)}>Search</button>
       </div>
       <div>
-        {wheaterdata.map((item) => (
-          <Wheater
+        {weatherdata.map((item) => (
+          <Weather
             key={item.date}
             date={item.date}
             mintemp={item.day.mintemp_c}
