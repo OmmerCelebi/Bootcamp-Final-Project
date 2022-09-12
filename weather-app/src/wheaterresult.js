@@ -1,7 +1,7 @@
 import React from "react";
 import "./weather.css";
 
-function wheatherresult({ date, mintemp, maxtemp, icon, condition }) {
+function weatherresult({ date, mintemp, maxtemp, icon, condition }) {
   return (
     <div className="result">
       <h2>{date}</h2>
@@ -18,4 +18,4 @@ function wheatherresult({ date, mintemp, maxtemp, icon, condition }) {
   );
 }
 
-export default wheatherresult;
+export default weatherresult;
