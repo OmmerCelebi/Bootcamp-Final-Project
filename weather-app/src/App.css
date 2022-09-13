@@ -2,10 +2,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-image: url("https://nordicapis.com/wp-content/uploads/How-to-Build-an-API-Driven-Weather-App.png");
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .search {
-  min-height: 10vh;
+  min-height: 60vh;
   display: flex;
   justify-content: center;
   align-items: center;
